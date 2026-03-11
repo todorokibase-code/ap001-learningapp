@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import React from 'react';
 const Sample = () => {
     const [text, setText] = useState('');
     function handleClick() {
@@ -13,6 +13,23 @@ const Sample = () => {
                 Click me
             </button>
             <p>ボタンを押すと変化：{text}</p>
+            <div>
+                <label htmlFor="learningdate">日付:</label>
+                <input id='learningdate' type='date'></input>
+            </div>
+            <div>
+                <label htmlFor='learningcontents'>
+                    内容を記載する
+                    <textarea id="learningcontents"></textarea>
+                </label>
+            </div>
+            <div>
+                <label htmlFor='contentstag'>
+                    タグ
+                    <input type='text' id="contentstag"></input>
+                </label>
+            </div>
+
         </>
     )
 
